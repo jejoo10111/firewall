@@ -6,7 +6,7 @@ This project was created to develop an intrusion detection/prevention system for
 
 This is a C++ build for your native Windows Firewall environment. There are two main components to this repo: the **firewall.exe** and the **pcapFirewall.exe**. 
 
-The **firewall.exe** does simple modifications to your firewall through the command prompt. It checks to see if the firewall is enabled, turn the firewall on/off, check for rules, enumerate the list of firewall rules, and add rules.
+The **firewall.exe** does simple modifications to your firewall through the command prompt. It checks to see if the firewall is enabled, turn the firewall on/off, check for rules, enumerate the list of firewall rules, filtering rules, and add rules.
 
 The **pcapFirewall.exe** reads an already created pcap file and is used to do analysis on. For instance, reading the pcap file per packet, signature detection for certain packets (most already hard-coded in), and ip address block and allowing. 
 
@@ -14,7 +14,7 @@ The **pcapFirewall.exe** reads an already created pcap file and is used to do an
 
 There are a few updates that need to be made to this tool for it to function appropriately and efficiently: 
 
-1. The **firewall.exe** "--Rules" switch does not read for the "Name of the Firewall". It does partial matches and exact matches for the "Rule Name" of the Rule. To further explain, some rules do not come with a name to their "Rule Name". Sometimes the name of the Rule depends on the local address name etc.
+1. The **firewall.exe** "--Filter" switch does not read for the "Name of the Firewall". It does partial matches and exact matches for the "Rule Name" of the Rule. To further explain, some rules do not come with a name to their "Rule Name". Sometimes the name of the Rule depends on the local address name etc.
 2. The **pcapFirewall.exe** currently only blocks and allows IP addresses. There are no switches that specify more. But this can be done in more depth with the **firewall.exe**.
 3. The **pcapFirewall.exe** looks at only certain signatures: GET requests, magic numbers, and IP addresses.
    
@@ -83,19 +83,49 @@ Once the executables are downloaded, you simply need to know the location of the
 
 Open an Administrative Command Prompt and either navigate to the location of the executable or drag the location of the executable to your command prompt. To execute the switches properly scroll to the **FEATURES** section of this README.
 
-
-
-
-
-
-
 ## Features
 
-The features in this tool are discussed below. An example to utilize the command for these switches are also provided. Whitespace is needed after each switch after the "=" sign.
-commands can be written as : [Name of Executable] [command]
+The features in this tool are discussed below. An example to utilize the command for these switches are also provided. Whitespace is needed after each switch after the switch.
+commands can be written as : [Name of Executable] [command] [options] 
 
-### Start
+**pcapFirewall.exe Features**
+Usage: firewall.exe file <pcap file> [options]
+--GET          Filtering for the HTTP GET request in pcap file
+--magic        Filtering for the magic numbers in the pcap file
+--ipA          Filtering for a specific ip address in a pcap file
+--block        Block ip address and add to firewall rules
+--allow        Allow ip address and add to firewall rules
 
+**firewall.exe Features**
+
+Usage: firewall.exe [options]
+Options:
+--Enable							 Check to see if firewall is enabled for current profile
+--ON							    Turn on firewall settings
+--OFF						   	 Turn off firewall settings
+--Rules                     Check to see if the rule exists
+--Enumerate					    List out all the firewall rules that exist on the system
+--Filter							 Filter the rules by Rule Name, Path of the Application, Port Number, IP Address
+--ADD <options>				 Add a firewall rule
+
+Usage: firewall.exe --ADD -n <name> -f <file_path> [options]
+Options:
+-d <description>           Description of the rule
+-g <group>                 Group name
+-r <direction>             Rule direction (in/out)
+-p <profile>               Profile type (domain/private/public/all)
+-l <protocol>              Protocol (tcp/udp/any)
+-a <action>                Action (allow/block)
+-s <ports>                 Ports (integer value)
+-il <local ip address>     Local Ip address value
+-ir <remote ip address>    Remote Ip address value
+
+Usage: firewall.exe --Filter --name [name] --Aname [application path] [options]
+Options:
+--name           Name of the rule
+-AName           Path of Application
+--port           port number
+--ip             ip address
 
 ## Credits
 

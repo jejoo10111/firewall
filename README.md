@@ -124,13 +124,12 @@ firewall.exe file <pcap file> [options]
 		<< L" -ir <remote ip address>    Remote Ip address value\n"
 		;
 
-	wcerr << L"Usage: firewall.exe --Filter --name [name] --Aname [application path] [options]\n"
-		<< L"Options:\n"
-		<< L" --name           Name of the rule\n"
-		<< L" -AName           Path of Application\n"
-		<< L" --port           port number\n"
-		<< L" --ip             ip address\n"
-		;
+Usage: firewall.exe --Filter --name [name] --Aname [application path] [options]
+Options:
+--name           Name of the rule
+--AName           Path of Application
+--port           port number
+--ip             ip address
 ```
 ## Credits
 

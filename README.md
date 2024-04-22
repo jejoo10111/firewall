@@ -136,7 +136,27 @@ This project was assigned to me by Gordon Long at George Mason University for my
 
 ### References
 Here are a list of resources that I have used that have assisted me in the creation of this project:
-1. 
+
+1. https://github.com/microsoft/Windows-classic-samples/blob/main/Samples/Win7Samples/security/windowsfirewall/add_gre_rule/Add_GRE_Rule.cpp
+2. https://github.com/microsoft/Windows-classic-samples/tree/main/Samples/Win7Samples/security/windowsfirewall
+3. https://learn.microsoft.com/en-us/windows/win32/api/netfw/nn-netfw-inetfwrule
+4. https://www.youtube.com/watch?v=lS6o0oeiGNs
+5. https://www.geeksforgeeks.org/structure-and-types-of-ip-address/
+6. https://stackoverflow.com/questions/32401277/c-structure-declaration-and-usage-to-hold-ip-connections
+7. https://www.youtube.com/watch?v=VeKvDuNzTdM
+8. https://www.youtube.com/watch?v=6os72VxYp8k
+9. https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ics/c-adding-an-outbound-rule
+10. https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ics/c-enabling-a-group
+11. https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ics/c-enumerating-firewall-rules
+12. https://learn.microsoft.com/en-us/windows/win32/api/netfw/nn-netfw-inetfwrule
+13. https://www.rhyous.com/2011/11/13/how-to-read-a-pcap-file-from-wireshark-with-c/
+14. https://www.tcpdump.org/pcap.html
+15. https://wiki.wireshark.org/SampleCaptures
+16. https://stackoverflow.com/questions/5237486/how-to-write-pcap-capture-file-header
+17. https://dev.to/10xlearner/magic-numbers-and-how-to-deal-with-them-in-c-2jbn
+18. https://github.com/strobejb/sslhook/blob/master/sslhook/pcap.cpp
+21. https://codereview.stackexchange.com/questions/216894/modeling-an-ipv4-address
+22. https://stackoverflow.com/questions/5328070/how-to-convert-string-to-ip-address-and-vice-versa
 
 
 

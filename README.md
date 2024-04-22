@@ -100,34 +100,37 @@ firewall.exe file <pcap file> [options]
 ```
 **firewall.exe Features**
 ```bash
-Usage: firewall.exe [options]
-Options:
---Enable							 Check to see if firewall is enabled for current profile
---ON							    Turn on firewall settings
---OFF						   	 Turn off firewall settings
---Rules                     Check to see if the rule exists
---Enumerate					    List out all the firewall rules that exist on the system
---Filter							 Filter the rules by Rule Name, Path of the Application, Port Number, IP Address
---ADD <options>				 Add a firewall rule
+	wcerr << L"Usage: firewall.exe [options]\n"
+		<< L"Options:\n"
+		<< L" --Enable							 Check to see if firewall is enabled for current profile\n"
+		<< L" --ON							     Turn on firewall settings\n"
+		<< L" --OFF						   	     Turn off firewall settings\n"
+		<< L" --Rules                            Check to see if the rule exists\n"
+		<< L" --Enumerate					     List out all the firewall rules that exist on the system\n"
+		<< L" --Filter							 Filter the rules by Rule Name, Path of the Application, Port Number, IP Address\n"
+		<< L" --ADD <options>					 Add a firewall rule\n"
+		;
 
-Usage: firewall.exe --ADD -n <name> -f <file_path> [options]
-Options:
--d <description>           Description of the rule
--g <group>                 Group name
--r <direction>             Rule direction (in/out)
--p <profile>               Profile type (domain/private/public/all)
--l <protocol>              Protocol (tcp/udp/any)
--a <action>                Action (allow/block)
--s <ports>                 Ports (integer value)
--il <local ip address>     Local Ip address value
--ir <remote ip address>    Remote Ip address value
+	wcerr << L"Usage: firewall.exe --ADD -n <name> -f <file_path> [options]\n"
+		<< L"Options:\n"
+		<< L" -d <description>           Description of the rule\n"
+		<< L" -g <group>                 Group name\n"
+		<< L" -r <direction>             Rule direction (in/out)\n"
+		<< L" -p <profile>               Profile type (domain/private/public/all)\n"
+		<< L" -l <protocol>              Protocol (tcp/udp/any)\n"
+		<< L" -a <action>                Action (allow/block)\n"
+		<< L" -s <ports>                 Ports (integer value)\n"
+		<< L" -il <local ip address>     Local Ip address value\n"
+		<< L" -ir <remote ip address>    Remote Ip address value\n"
+		;
 
-Usage: firewall.exe --Filter --name [name] --Aname [application path] [options]
-Options:
---name           Name of the rule
--AName           Path of Application
---port           port number
---ip             ip address
+	wcerr << L"Usage: firewall.exe --Filter --name [name] --Aname [application path] [options]\n"
+		<< L"Options:\n"
+		<< L" --name           Name of the rule\n"
+		<< L" -AName           Path of Application\n"
+		<< L" --port           port number\n"
+		<< L" --ip             ip address\n"
+		;
 ```
 ## Credits
 

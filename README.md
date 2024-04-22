@@ -97,9 +97,9 @@ firewall.exe file <pcap file> [options]
 --ipA          Filtering for a specific ip address in a pcap file
 --block        Block ip address and add to firewall rules
 --allow        Allow ip address and add to firewall rules
-
+```
 **firewall.exe Features**
-
+```bash
 Usage: firewall.exe [options]
 Options:
 --Enable							 Check to see if firewall is enabled for current profile
@@ -128,7 +128,7 @@ Options:
 -AName           Path of Application
 --port           port number
 --ip             ip address
-
+```
 ## Credits
 
 This project was assigned to me by Gordon Long at George Mason University for my Digital Forensics class. 

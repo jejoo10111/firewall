@@ -71,7 +71,10 @@ If you are accessing the script through visual studi code, the below link is the
 
 #### ws2_32.lib
 Integrate ws2_32.lib into libraries : 
-For Visual Studio: Go to Project Properties -> Configuration Properties -> Linker -> Input, then add Ws2_32.lib to the Additional Dependencies field.
+
+For Visual Studio: 
+Go to Project Properties -> Configuration Properties -> Linker -> Input, then add Ws2_32.lib to the Additional Dependencies field.
+
 - Make sure you locate the Ws2_32.lib library for Visual Studio 
 
 ## How to Start

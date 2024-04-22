@@ -89,7 +89,9 @@ The features in this tool are discussed below. An example to utilize the command
 commands can be written as : [Name of Executable] [command] [options] 
 
 **pcapFirewall.exe Features**
-Usage: firewall.exe file <pcap file> [options]
+
+```bash
+firewall.exe file <pcap file> [options]
 --GET          Filtering for the HTTP GET request in pcap file
 --magic        Filtering for the magic numbers in the pcap file
 --ipA          Filtering for a specific ip address in a pcap file

@@ -157,6 +157,17 @@ Here are a list of resources that I have used that have assisted me in the creat
 18. https://github.com/strobejb/sslhook/blob/master/sslhook/pcap.cpp
 21. https://codereview.stackexchange.com/questions/216894/modeling-an-ipv4-address
 22. https://stackoverflow.com/questions/5328070/how-to-convert-string-to-ip-address-and-vice-versa
+23. https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ics/c-restricting-service
+24. https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ics/c-disabling-a-firewall-per-interface
+25. https://github.com/microsoft/Windows-classic-samples/blob/main/Samples/Win7Samples/security/windowsfirewall/enablegroup/EnableGroup.cpp
+26. https://www.malware-traffic-analysis.net/2024/index.html
+27. https://github.com/neu5ron/TMInfosec/blob/master/Datasets/PCAPs.md
+28. https://learn.microsoft.com/en-us/windows/win32/api/icftypes/ne-icftypes-net_fw_ip_protocol
+29. https://www.youtube.com/watch?v=xEj8ScdDBJs
+30. https://www.youtube.com/watch?v=YpnrR7D_lRI
+31. https://www.youtube.com/watch?v=FrUTHYfFv98
+32. https://www.tcpdump.org/pcap.html
+33. https://www.tcpdump.org/manpages/pcap.3pcap.html
 
 
 

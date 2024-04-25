@@ -15,8 +15,11 @@ The **pcapFirewall.exe** reads an already created pcap file and is used to do an
 There are a few updates that need to be made to this tool for it to function appropriately and efficiently: 
 
 1. The **firewall.exe** "--Filter" switch does not read for the "Name of the Firewall". It does partial matches and exact matches for the "Rule Name" of the Rule. To further explain, some rules do not come with a name to their "Rule Name". Sometimes the name of the Rule depends on the local address name etc.
-2. The **pcapFirewall.exe** currently only blocks and allows IP addresses. There are no switches that specify more. But this can be done in more depth with the **firewall.exe**.
-3. The **pcapFirewall.exe** looks at only certain signatures: GET requests, magic numbers, and IP addresses.
+2. The **firewall.exe** --ADD rule does not automatically enable the rule.
+3. The **pcapFirewall.exe** currently only blocks and allows IP addresses. There are no switches that specify more. But this can be done in more depth with the **firewall.exe**.
+4. The **pcapFirewall.exe** looks at only certain signatures: GET requests, magic numbers, and IP addresses.
+5. The **pcapFirewall.exe** does not print the packet numbers.
+6. The **pcapFirewall.exe** does not filter for specific magic number, currently do it as "| JPEG" (as example) to filter 
    
 ## How To SetUp Environment
 
